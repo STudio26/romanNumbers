@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class RomanNumberTest {
+class RomanNumberTest {
 
     private static RomanNumber roman;
 
@@ -16,67 +16,67 @@ public class RomanNumberTest {
     }
 
     @Test
-    public void OneShouldReturnI() {
+    void OneShouldReturnI() {
         assertEquals("I", roman.convert(1));
     }
 
     @Test
-    public void TwoShouldReturnII() {
+    void TwoShouldReturnII() {
         assertEquals("II", roman.convert(2));
     }
 
     @Test
-    public void ThreeShouldReturnIII() {
+    void ThreeShouldReturnIII() {
         assertEquals("III", roman.convert(3));
     }
 
     @Test
-    public void FourShouldReturnIV() {
+    void FourShouldReturnIV() {
         assertEquals("IV", roman.convert(4));
     }
 
     @Test
-    public void FiveShouldReturnV() {
+    void FiveShouldReturnV() {
         assertEquals("V", roman.convert(5));
     }
 
     @Test
-    public void SixShouldReturnVI() {
+    void SixShouldReturnVI() {
         assertEquals("VI", roman.convert(6));
     }
 
     @Test
-    public void SevenShouldReturnVII() {
+    void SevenShouldReturnVII() {
         assertEquals("VII", roman.convert(7));
     }
 
     @Test
-    public void EightShouldReturnVIII() {
+    void EightShouldReturnVIII() {
         assertEquals("VIII", roman.convert(8));
     }
 
     @Test
-    public void NineShouldReturnIX() {
+    void NineShouldReturnIX() {
         assertEquals("IX", roman.convert(9));
     }
 
     @Test
-    public void TenShouldReturnX() {
+    void TenShouldReturnX() {
         assertEquals("X", roman.convert(10));
     }
 
     @Test
-    public void ElevenShouldReturnXI() {
+    void ElevenShouldReturnXI() {
         assertEquals("XI", roman.convert(11));
     }
 
     @Test
-    public void TwelveShouldReturnXII() {
+    void TwelveShouldReturnXII() {
         assertEquals("XII", roman.convert(12));
     }
 
     @Test
-    public void ThirteenShouldReturnXIII() {
+    void ThirteenShouldReturnXIII() {
         assertEquals("XIII", roman.convert(13));
     }
 
