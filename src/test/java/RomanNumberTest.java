@@ -79,4 +79,10 @@ public class RomanNumberTest {
     public void ThirteenShouldReturnXIII() {
         assertEquals("XIII", roman.convert(13));
     }
+
+    @ParameterizedTest
+    @CsvSource({"49, XLIX", "51, LI", "99, XCIX", "101, CI", "399, CCCXCIX", "401, CDI", "499, CDXCIX", "501, DI", "899, DCCCXCIX", "901, CMI", "1001, MI"})
+    void convert_ShouldGenerateTheExpectedRomanNumber(int input, String expected) {
+        assertEquals(expected, roman.convert(input));
+    }
 }
